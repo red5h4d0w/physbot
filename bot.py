@@ -1,11 +1,5 @@
-import aiohttp
-import aiosqlite
-import asyncio
 import discord
 from discord.ext import commands
-from functools import reduce
-import json
-import random
 
 __version__ = "0.2"
 
