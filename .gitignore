@@ -1,3 +1,6 @@
 *.txt
 *.json
 *.db
+
+# Do not ignore those files
+!requirements.txt
