@@ -1,4 +1,5 @@
 import aiohttp
+import aiosqlite
 import asyncio
 import discord
 from discord.ext import commands
@@ -6,9 +7,11 @@ from functools import reduce
 import json
 import random
 
-__version__ = "0.1"
+__version__ = "0.2"
 
 bot = commands.Bot(command_prefix="p.", activity=discord.Game(name="aider la Physum"))
+
+
 
 with open("token.txt") as f:
     TOKEN = f.read()
@@ -39,6 +42,11 @@ async def conseil(ctx, *mots):
     else:
         mot = mots[0]
     try:
+        # version pour  database sqlite3
+        #async with aiosqlite.connect("infos.db") as conn:
+            #async with conn.cursor() as c:
+                #conseil = await c.execute("SELECT * FROM conseil WHERE nom=?",mot)
+        #await ctx.send(conseil)
         with open("conseil.json") as json_file:
             data = json.load(json_file)
             info = data[mot]
@@ -49,6 +57,10 @@ async def conseil(ctx, *mots):
 
 @conseil.command()
 async def create(ctx, motclé: str, *conseil):
+    # version pour database sqlite3
+    #async with aiosqlite.connect("infos.db") as conn:
+        #async with conn.cursor() as c:
+            #await c.execute("INSERT INTO conseil (nom) VALUES (?)", "".join(conseil))
     with open("conseil.json", "r+") as json_file:
         data = json.load(json_file)
         data[motclé] = " ".join(conseil)
