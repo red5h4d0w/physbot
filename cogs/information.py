@@ -57,4 +57,4 @@ class Information(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(bot)
+    bot.add_cog(Information(bot))
