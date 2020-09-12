@@ -3,6 +3,7 @@ from discord.ext import commands
 
 
 class Physum(commands.Cog):
+    """Utilities for the PHYSUM Discord Server."""
     def __init__(self, bot):
         self.bot = bot
 
