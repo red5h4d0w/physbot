@@ -1,3 +1,3 @@
 # PhysBot
 
-Bot pour le serveur [Discord de la PHYSUM](https://discord.gg/udDcBg3).
+Bot pour le serveur discord de la [PHYSUM](http://www.aephysum.umontreal.ca/).
