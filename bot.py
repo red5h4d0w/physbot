@@ -23,6 +23,7 @@ if __name__ == '__main__':
     )
 
     startup_extensions = [
+        'cogs.admin',
         'cogs.memes',
         'cogs.physum',
         'cogs.information',
