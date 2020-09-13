@@ -38,6 +38,8 @@ class Information(commands.Cog):
             await ctx.send("Il y a déjà un conseil avec cette clé.")
 
         else:
+            # if we don't know what the error is,
+            # raise it so it is not suppressed
             raise _error
 
     # TODO: conseil_delete, conseil_update commands
