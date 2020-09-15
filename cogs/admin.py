@@ -7,7 +7,7 @@ class Admin(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    @commands.has_permission(administrator=True)
+    @commands.has_permissions(administrator=True)
     async def remove(self, ctx, number_of_messages: int):
         """Remove a given amount of messages."""
 
