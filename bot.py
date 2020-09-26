@@ -27,6 +27,7 @@ if __name__ == '__main__':
         'cogs.memes',
         'cogs.physum',
         'cogs.information',
+        'cogs.games',
     ]
 
     for extension in startup_extensions:
