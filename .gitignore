@@ -1,6 +1,7 @@
 *.txt
 *.json
 *.db
+*.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
