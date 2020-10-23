@@ -42,6 +42,7 @@ class Memes(commands.Cog):
                 else:
                     await ctx.send("Je n'ai pas réussi")
         posts = json["data"]["children"]
+        posts = list(filter(lambda post : post["data"]["thumbnail"] != "nsfw", posts))
         post = random.choice(posts)
         img = post["data"]["url"]
         await ctx.send(img)
