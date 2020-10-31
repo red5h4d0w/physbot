@@ -37,7 +37,7 @@ if __name__ == '__main__':
     with open("token.txt") as f:
         TOKEN = f.read()
 
-    intents = discord.Intents(emojis=True, members=True, messages=True)
+    intents = discord.Intents(emojis=True, guilds=True, members=True, messages=True)
 
     bot = PhysBot(
         description="Bot pour le serveur Discord de la PHYSUM!",
