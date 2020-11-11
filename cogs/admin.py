@@ -17,6 +17,13 @@ class Admin(commands.Cog):
             f"J'ai effacé {len(deleted)} messages dans {ctx.channel.mention}"
         )
 
+    @commands.command()
+    @commands.is_owner()
+    async def stop(self, ctx):
+        """Stop the bot, and let the process manager handle the reboot."""
+
+        await self.bot.logout()
+
 
 def setup(bot):
     bot.add_cog(Admin(bot))
