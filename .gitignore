@@ -1,7 +1,5 @@
-*.txt
 *.json
 *.db
-*.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -10,3 +8,7 @@ __pycache__/
 
 # Do not ignore those files
 !requirements.txt
+
+# Config files
+config.py
+lexique_physique_filtre.txt
