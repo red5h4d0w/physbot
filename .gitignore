@@ -1,6 +1,5 @@
 *.json
 *.db
-*.bat
 *.tar
 
 # Byte-compiled / optimized / DLL files
