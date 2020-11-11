@@ -37,14 +37,14 @@ if __name__ == '__main__':
     with open("token.txt") as f:
         TOKEN = f.read()
 
-    intents = discord.Intents(emojis=True, guilds=True, members=True, messages=True)
+    intents = discord.Intents.all()
 
     bot = PhysBot(
         description="Bot pour le serveur Discord de la PHYSUM!",
         command_prefix="p.",
         activity=discord.Game(name="aider la Physum"),
-        db_name='physbot.db',
         intents=intents
+        db_name='physbot.db',
     )
 
     startup_extensions = [
