@@ -43,7 +43,7 @@ if __name__ == '__main__':
         description="Bot pour le serveur Discord de la PHYSUM!",
         command_prefix="p.",
         activity=discord.Game(name="aider la Physum"),
-        intents=intents
+        intents=intents,
         db_name='physbot.db',
     )
 
