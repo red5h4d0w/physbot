@@ -44,7 +44,7 @@ if __name__ == '__main__':
         command_prefix="p.",
         activity=discord.Game(name="aider la Physum"),
         intents=intents,
-        db_name='physbot.db',
+        db_name='db/physbot.db',
     )
 
     startup_extensions = [
