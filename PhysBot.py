@@ -2,6 +2,8 @@ import aiosqlite
 import discord
 from discord.ext import commands
 
+import config
+
 __version__ = "0.2"
 
 
@@ -34,8 +36,6 @@ class PhysBot(commands.Bot):
 
 
 if __name__ == '__main__':
-    with open("token.txt") as f:
-        TOKEN = f.read()
 
     intents = discord.Intents.all()
 
@@ -58,4 +58,4 @@ if __name__ == '__main__':
     for extension in startup_extensions:
         bot.load_extension(extension)
 
-    bot.run(TOKEN)
+    bot.run(config.token)
