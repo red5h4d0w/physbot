@@ -41,7 +41,7 @@ if __name__ == '__main__':
 
     bot = PhysBot(
         description="Bot pour le serveur Discord de la PHYSUM!",
-        command_prefix="p.",
+        command_prefix=["p.", "P."],
         activity=discord.Game(name="aider la Physum"),
         intents=intents,
         db_name='db/physbot.db',
