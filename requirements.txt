@@ -1,3 +1,4 @@
 aiosqlite==0.15.0
 discord.py>=1.5.1
 unidecode==1.1.1
+numpy==1.19.1
